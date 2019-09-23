@@ -145,6 +145,7 @@ var x = document.getElementById("myAudio1");
 var src = document.getElementById("audioSource");
 
 function playAMusic() {
+    x.load();
     x.play();
 }
 
