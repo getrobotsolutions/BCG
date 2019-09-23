@@ -224,11 +224,16 @@ function OnJoystickControlled(strPara){
         playAMusic();
     }
     if(btn_info[6] === '1'){
-        window.PlaySpeech("I am 6");
         if(danceModeFlag === false)
-        {danceModeFlag = true;}
+        {
+            window.PlaySpeech("Dance Mode On");
+            danceModeFlag = true;
+        }
         else
-        {danceModeFlag = false;}
+        {
+            window.PlaySpeech("Dance Mode Off");
+            danceModeFlag = false;
+        }
     }
     if(btn_info[7] === '1'){
         stopMusic();
