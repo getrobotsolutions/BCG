@@ -239,8 +239,8 @@ function SendEmail()
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-    var fileName = addr; 
-    
+    var fileName = addr+d.getTime(); 
+    tempEmail=fileName;
     SaveImage(fileName);
     
     // 메일로 전송
