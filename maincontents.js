@@ -144,7 +144,7 @@ $(document).ready(function(){
 
 
 function OnJoystickControlled(strPara){
-    var btn_info = strPara.split(',')[10];
+    var btn_info = strPara.split(',')[4];
 
 
     if(btn_info[0] == '1'){
