@@ -22,7 +22,7 @@
           data=JSON.parse(data);
             for (var i = 0; i < data.length; i++) {
               //images[i]=data[i]['email'];
-              $('#slides').append("<li class='slide showing'><img src='"+"../Resources/Photo/" + data[i]['email'] + ".jpg" + "'></li>");
+              $('#slides').append("<li class='slide showing'><img src='"+"../Resources/Photo/" + data[i]['filename'] + ".jpg" + "'></li>");
             }
             slideshow();
             //alert(images.length);

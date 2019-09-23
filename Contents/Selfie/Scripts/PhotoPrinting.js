@@ -239,8 +239,8 @@ function SendEmail()
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-    var fileName = addr+d.getTime(); 
-    tempEmail=fileName;
+    var fileName = addr+d.getTime();
+    var tempfilename= fileName;
     SaveImage(fileName);
     
     // 메일로 전송
@@ -255,7 +255,7 @@ function SendEmail()
         type: "POST",
         url: "http://robotaisolutions.com/robot-work/selfie-emails.php",
         data: { 
-          
+            'fileNAME':tempfilename,
            'email':tempEmail,
            'apID':'BCG'
         }
