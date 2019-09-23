@@ -139,10 +139,12 @@ $(document).ready(function(){
         $('#dialog-overlay, #dialog-box').hide();
         return false;
     });
-    
+
+    var x = document.getElementById("myAudio1");
+    var src = document.getElementById("audioSource");
+
+
 });
-var x = document.getElementById("myAudio1");
-var src = document.getElementById("audioSource");
 
 function playAMusic() {
     x.load();
