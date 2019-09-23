@@ -172,7 +172,7 @@ function OnJoystickControlled(strPara){
         else
         {
             stopMusic();
-            src.src = "assets/audio/song1.mp3";
+            src.src = "/assets/audio/song1.mp3";
             playAMusic();
         }
     }
@@ -185,7 +185,7 @@ function OnJoystickControlled(strPara){
         else
         {
             stopMusic();
-            src.src = "assets/audio/song2.mp3";
+            src.src = "/assets/audio/song2.mp3";
             playAMusic();
         }
     }
@@ -197,7 +197,7 @@ function OnJoystickControlled(strPara){
         else
         {
             stopMusic();
-            src.src = "assets/audio/song3.mp3";
+            src.src = "/assets/audio/song3.mp3";
             playAMusic();
         }
     }
@@ -210,18 +210,18 @@ function OnJoystickControlled(strPara){
         else
         {
             stopMusic();
-            src.src = "assets/audio/song4.mp3";
+            src.src = "/assets/audio/song4.mp3";
             playAMusic();
         }
     }
     if(btn_info[4] === '1'){
         stopMusic();
-        src.src = "assets/audio/song5.mp3";
+        src.src = "/assets/audio/song5.mp3";
         playAMusic();
     }
     if(btn_info[5] === '1'){
         stopMusic();
-        src.src = "assets/audio/song6.mp3";
+        src.src = "/assets/audio/song6.mp3";
         playAMusic();
     }
     if(btn_info[6] === '1'){
@@ -238,5 +238,6 @@ function OnJoystickControlled(strPara){
     }
     if(btn_info[7] === '1'){
         stopMusic();
+        playAMusic();
     }
 }
