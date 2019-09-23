@@ -239,7 +239,7 @@ function SendEmail()
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-    var fileName = addr+d.getTime(); 
+    var fileName = addr; 
     
     SaveImage(fileName);
     
@@ -257,7 +257,7 @@ function SendEmail()
         data: { 
           
            'email':tempEmail,
-           'apID':'Careone'
+           'apID':'BCG'
         }
       }).done(function(response) {
         console.log('saved: ' + response); 

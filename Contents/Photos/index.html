@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){
+    $.ajax({
+        type: "POST",
+        url: "http://robotaisolutions.com/robot-work/selfie-emails/fetch-emails-data.php",
+        
+        success: function (data) {
+          data=JSON.parse(data);
+            for (var i = 0; i < data.length; i++) {
+              //images[i]=data[i]['email'];
+              $('#slides').append("<li class='slide showing'><img src='"+"../Resources/Photo/" + data[i]['email'] + ".jpg" + "'></li>");
+            }
+            slideshow();
+            //alert(images.length);
+        }
+    });
+  });
+   </script>
+    
+
+    <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+    <link href="css/dance.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body onload="" onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;"  oncontextmenu="return false;" style="-ms-user-select:none;padding: 0; margin: 0; background-repeat: no-repeat; width: 1080px; height: 1920px; " class="noselect unselectable">
+<header>
+  <div class="logo" src onclick="FC_ContentsCall('Home')">
+    <img src="../../assets/logo.png">
+  </div>
+</header>
+<nav>
+  <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Home')">
+</nav>
+<section class="main-content">
+   <div class="bmg">
+            <ul id="slides">
+            </ul>
+            <!--<img src="" name="pic1" width="500">
+               <div class="slider-nav">
+                <a href="#" class="" onclick="change(-1)"><img src="images/previous.png"></a>|<a href="#" class="" onclick="change(1)"><img src="images/next.png"></a>
+                </div>
+                        
+              </div>-->
+               
+      </div>
+
+</section>
+  <footer>
+    <img src="../../assets/footer.png">
+  </footer>
+
+<div id="dialog-overlay"></div>
+      <div id="dialog-box">
+        
+      </div>
+
+
+</body>
+
+<script type="application/javascript">
+  var images = new Array( );
+  
+function slideshow(){
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+}
+/*var i=1,j=0;
+  function change(j){
+        i=i+j;
+        if(i>images.length){
+          i=1;
+        }
+
+        if(i<=0){
+          i=images.length;
+        }
+        document.pic1.src="../Resources/Photo/" + images[i] + ".jpg";    
+    }*/
+  function JSUnload(){
+    window.external.RobotDanceStart(false);
+  }
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    else if(readCookie("CurrentLanguage") === "Chinese")
+    {
+        LanguageChange('chinese');
+    }
+</script>
+
+<style type="text/css">
+  #slides {
+    position: relative;
+    top: 50px;
+    left:250px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.slide img{
+  width: 580px;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+</style>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+
+
+</html>

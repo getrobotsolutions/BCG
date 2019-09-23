@@ -54,7 +54,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             break;
 
         case "OurPhotos":
-            //location.href = "";
+            location.href = "Contents/Photos/index.html";
             //PlaySpeech(speak[5]);
             break;
         
@@ -139,6 +139,7 @@ $(document).ready(function(){
         $('#dialog-overlay, #dialog-box').hide();
         return false;
     });
+    
 })
 
 
