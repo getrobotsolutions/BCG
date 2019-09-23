@@ -144,33 +144,45 @@ $(document).ready(function(){
 
 
 function OnJoystickControlled(strPara){
-    var btn_info = strPara.split(',')[4];
+    var btn_info = strPara.split(',')[10];
 
 
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
-            SetVolume(1);
+            //SetVolume(1);
             window.external.PlaySpeech("Take a picture with me");     
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
-        SetVolume(1);
+        //SetVolume(1);
         window.external.PlaySpeech("Welcome to the CPCA Annual Conference");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
-            SetVolume(1);
+            //SetVolume(1);
             window.external.PlaySpeech("Would you like to see me dance?");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
-        SetVolume(1);
+        //SetVolume(1);
        window.external.PlaySpeech("Want to become a robot?");
         
     }
     if(btn_info[4] == '1'){
-        FC_ContentsCall('Config');       
+        window.PlaySpeech("I am 4");
+    }
+    if(btn_info[5] == '1'){
+        window.PlaySpeech("I am 5");
+    }
+    if(btn_info[6] == '1'){
+        window.PlaySpeech("I am 6");
+    }
+    if(btn_info[7] == '1'){
+        window.PlaySpeech("I am 7");
+    }
+    if(btn_info[8] == '1'){
+        window.PlaySpeech("I am 8");
     }
 }
