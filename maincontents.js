@@ -140,49 +140,97 @@ $(document).ready(function(){
         return false;
     });
     
-})
+});
+var x = document.getElementById("myAudio");
+var src = document.getElementById("audioSource");
 
+function playAMusic() {
+    x.play();
+}
+
+function pauseMusic() {
+    x.pause();
+}
+
+function stopMusic() {
+    x.pause();
+    x.currentTime = 0;
+}
+
+var danceModeFlag = false;
 
 function OnJoystickControlled(strPara){
     var btn_info = strPara.split(',')[4];
 
 
-    if(btn_info[0] == '1'){
-           // window.external.ChangeLanguage("en-us");
-            //SetVolume(1);
-            window.external.PlaySpeech("Take a picture with me");     
+    if(btn_info[0] === '1'){
+        if (danceModeFlag === false)
+        {
+            window.external.PlaySpeech("Take a picture with me");
+        }
+        else
+        {
+            stopMusic();
+            src.src = "assets/audio/song1.mpeg";
+            playAMusic();
+        }
     }
 
-    if(btn_info[1] == '1'){
-        //window.external.ChangeLanguage("en-us");
-        //SetVolume(1);
-        window.external.PlaySpeech("Welcome to the CPCA Annual Conference");
-        
+    if(btn_info[1] === '1'){
+        if (danceModeFlag === false)
+        {
+            window.external.PlaySpeech("Welcome to the CPCA Annual Conference");
+        }
+        else
+        {
+            stopMusic();
+            src.src = "assets/audio/song2.mpeg";
+            playAMusic();
+        }
     }
-    if(btn_info[2] == '1'){
-        //window.external.ChangeLanguage("en-us");
-            //SetVolume(1);
+    if(btn_info[2] === '1'){
+        if (danceModeFlag === false)
+        {
             window.external.PlaySpeech("Would you like to see me dance?");
+        }
+        else
+        {
+            stopMusic();
+            src.src = "assets/audio/song3.mpeg";
+            playAMusic();
+        }
     }
-    if(btn_info[3] == '1'){
-        //window.external.ChangeLanguage("en-us");
-        //SetVolume(1);
-       window.external.PlaySpeech("Want to become a robot?");
-        
+    if(btn_info[3] === '1'){
+        if (danceModeFlag === false)
+        {
+            window.external.PlaySpeech("Want to become a robot?");
+
+        }
+        else
+        {
+            stopMusic();
+            src.src = "assets/audio/song4.mpeg";
+            playAMusic();
+        }
     }
-    if(btn_info[4] == '1'){
-        window.PlaySpeech("I am 4");
+    if(btn_info[4] === '1'){
+        stopMusic();
+        src.src = "assets/audio/song5.mpeg";
+        playAMusic();
     }
-    if(btn_info[5] == '1'){
-        window.PlaySpeech("I am 5");
+    if(btn_info[5] === '1'){
+        stopMusic();
+        src.src = "assets/audio/song6.mpeg";
+        playAMusic();
     }
-    if(btn_info[6] == '1'){
+    if(btn_info[6] === '1'){
         window.PlaySpeech("I am 6");
+        if(danceModeFlag === false)
+        {danceModeFlag = true;}
+        else
+        {danceModeFlag = false;}
     }
-    if(btn_info[7] == '1'){
-        window.PlaySpeech("I am 7");
-    }
-    if(btn_info[8] == '1'){
-        window.PlaySpeech("I am 8");
+    if(btn_info[7] === '1'){
+        stopMusic();
     }
 }
