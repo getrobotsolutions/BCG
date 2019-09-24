@@ -61,15 +61,16 @@ function FC_ContentsCall(strContentsName, strLanguage)
         
         
             
-        case "Config":
-            if(conf_count === 5)
+        case "music":
+            if(conf_count === 3)
             {
                 conf_count = 0;
-                location.href = "Config/Config.htm";
+                location.href = "Contents/songTrigger/index.htm";
             }
             else
             {
                 conf_count++;
+                console.log(conf_count);
             }
 
             break;

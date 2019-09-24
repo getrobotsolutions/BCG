@@ -2,6 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79a0d263-f663-4816-bff5-eba3ecb73a65" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/1_re.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/2_re.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/3_re.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Avatar_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Avatar_delete_none.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Avatar_delete_none_ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Avatar_delete_nor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Avatar_delete_nor_ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Home_Button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/avatar_frame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/avatar_shot_nor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/avatar_shot_nor_ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/avatar_shot_press.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/avatar_shot_press_ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/bg(old).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/bg-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Image/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.htm.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.js.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Scripts/BaseCommand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Scripts/BaseEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Scripts/FlashPlayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/Scripts/LogConsole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/songTrigger/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song10.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song11.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song12.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song7.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song8.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/audio/song9.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maincontents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maincontents.js" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,47 +59,77 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="htm" value="1" />
+          <entry key="css" value="1" />
+          <entry key="htm" value="2" />
           <entry key="html" value="1" />
           <entry key="js" value="1" />
+          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="3" />
+          <entry key="Image" value="1" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="htm" value="39" />
-          <entry key="js" value="395" />
+          <entry key="css" value="16" />
+          <entry key="htm" value="789" />
+          <entry key="js" value="419" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="39" />
-          <entry key="JavaScript" value="395" />
+          <entry key="CSS" value="16" />
+          <entry key="HTML" value="789" />
+          <entry key="JavaScript" value="419" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maincontents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="687">
+              <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contents/songTrigger/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/maincontents.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+            <state relative-caret-position="373">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -73,8 +142,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/maincontents.htm" />
+        <option value="$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.css" />
+        <option value="$PROJECT_DIR$/Contents/songTrigger/index.htm" />
         <option value="$PROJECT_DIR$/maincontents.js" />
+        <option value="$PROJECT_DIR$/maincontents.htm" />
       </list>
     </option>
   </component>
@@ -94,7 +165,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -118,8 +189,7 @@
             <path>
               <item name="BCG" type="b2602c69:ProjectViewProjectNode" />
               <item name="BCG" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,6 +207,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/audio" />
+      <recent name="$PROJECT_DIR$/Contents" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -161,20 +232,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569271560531</updated>
-      <workItem from="1569271562038" duration="3094000" />
+      <workItem from="1569271562038" duration="8909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3094000" />
+    <option name="totallyTimeSpent" value="8909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33547926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -208,17 +279,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maincontents.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/assets/logo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/maincontents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="687">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/songTrigger/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/songTrigger/RobotAvatar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maincontents.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
