@@ -389,7 +389,7 @@ function Retake()
 
 function sendToSlack() {
     var pat = "../Resources/Photo/"+imageName;
-    alert(pat);
+    //alert(pat);
     var img = new Image();
     img.src = pat;
 
