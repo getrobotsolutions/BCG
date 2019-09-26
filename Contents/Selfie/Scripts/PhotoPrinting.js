@@ -212,7 +212,7 @@ function keyboard(strPara)
 /* 전송 */
 function SendEmail()
 {
-    sendToSlack(imageFilePath);
+    sendToSlack();
     // 메일 주소가 공백일 경우 무시
     if (message == "")
         return;
