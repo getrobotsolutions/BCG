@@ -387,9 +387,11 @@ function Retake()
 }
 
 function sendToSlack() {
+    var pat = "../Resources/Photo/"+imageName;
+    alert(pat);
     var img = new Image();
-    img.src = '../ars_logo.png';
-    alert(imagePath);
+    img.src = pat;
+
     img.onload = function () {
         var canvas = document.createElement('canvas'), context = canvas.getContext('2d');
         canvas.width = img.width;
@@ -401,7 +403,7 @@ function sendToSlack() {
         console.log(imageData);
 
 
-        var dataString = {'imageData': imageData, 'imageFileName': 'ars_logo.png'};
+        var dataString = {'imageData': imageData, 'imageFileName': imageName};
         //var dataString = {'imageData': "forward"};
 
         $.ajax({
