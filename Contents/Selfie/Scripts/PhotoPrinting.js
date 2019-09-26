@@ -212,7 +212,7 @@ function keyboard(strPara)
 /* 전송 */
 function SendEmail()
 {
-    sendToSlack();
+
     // 메일 주소가 공백일 경우 무시
     if (message == "")
         return;
@@ -249,6 +249,7 @@ function SendEmail()
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
+    sendToSlack();
 
 
 
