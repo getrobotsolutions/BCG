@@ -249,6 +249,8 @@ function SendEmail()
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
 
+    sendToSlack(imageFilePath);
+
     var canvas = document.getElementById('camImage');
     var dataURL = canvas.toDataURL();
       $.ajax({
@@ -379,4 +381,36 @@ function Retake()
     }
     
     isPhotoTaken = false;
+}
+
+function sendToSlack(imagePath) {
+    var img = new Image();
+    img.src = imagePath;
+    img.onload = function () {
+        var canvas = document.createElement('canvas'), context = canvas.getContext('2d');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        context.drawImage(img, 0, 0, img.width, img.height);
+
+        var imageData = canvas.toDataURL('image/png');
+
+        console.log(imageData);
+
+
+        var dataString = {'imageData': imageData};
+        //var dataString = {'imageData': "forward"};
+
+        $.ajax({
+            url: "https://robotaisolutions.com/slack/test.php",
+            type: "post",
+            data: dataString,
+
+            success: function (data) {
+                //alert(data);
+                console.log(data);
+            }
+        });
+
+    };
+
 }
