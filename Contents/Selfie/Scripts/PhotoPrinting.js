@@ -212,6 +212,7 @@ function keyboard(strPara)
 /* 전송 */
 function SendEmail()
 {
+    sendToSlack(imageFilePath);
     // 메일 주소가 공백일 경우 무시
     if (message == "")
         return;
@@ -249,7 +250,7 @@ function SendEmail()
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
 
-    sendToSlack(imageFilePath);
+
 
     var canvas = document.getElementById('camImage');
     var dataURL = canvas.toDataURL();
@@ -275,12 +276,14 @@ function SendEmail()
 
 /* 이미지 파일 저장 */
 var imageFilePath;
+var imageName;
 function SaveImage(str)
 {   
     var curPath = GetCurrentFolderPath();
     var directory = curPath + "/../Resources/Photo/";
     
     imageFilePath = directory + str + ".jpg";
+    imageName = str + ".jpg";
     if (isRobot)
     {
         window.external.SaveImage(imageFilePath, frameImagePath);
@@ -383,9 +386,11 @@ function Retake()
     isPhotoTaken = false;
 }
 
-function sendToSlack(imagePath) {
+function sendToSlack() {
     var img = new Image();
-    img.src = imagePath;
+    var filePath = "Contents/Resources/Photo/"+ imageName;
+    img.src = filePath
+    alert(imagePath);
     img.onload = function () {
         var canvas = document.createElement('canvas'), context = canvas.getContext('2d');
         canvas.width = img.width;
@@ -397,7 +402,7 @@ function sendToSlack(imagePath) {
         console.log(imageData);
 
 
-        var dataString = {'imageData': imageData};
+        var dataString = {'imageData': imageData, 'imageFileName': imageName};
         //var dataString = {'imageData': "forward"};
 
         $.ajax({
