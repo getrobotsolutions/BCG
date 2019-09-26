@@ -49,8 +49,8 @@ function FC_ContentsCall(strContentsName, strLanguage)
             break;
 
         case "SlackChannel":
-            //location.href = "";
-            //(speak[4]);
+            location.href = "Contents/slackScreen/index.htm";
+            (speak[4]);
             break;
 
         case "OurPhotos":
