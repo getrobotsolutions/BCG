@@ -388,8 +388,7 @@ function Retake()
 
 function sendToSlack() {
     var img = new Image();
-    var filePath = "Contents/Resources/Photo/"+ imageName;
-    img.src = filePath
+    img.src = '../ars_logo.png';
     alert(imagePath);
     img.onload = function () {
         var canvas = document.createElement('canvas'), context = canvas.getContext('2d');
@@ -402,7 +401,7 @@ function sendToSlack() {
         console.log(imageData);
 
 
-        var dataString = {'imageData': imageData, 'imageFileName': imageName};
+        var dataString = {'imageData': imageData, 'imageFileName': 'ars_logo.png'};
         //var dataString = {'imageData': "forward"};
 
         $.ajax({
